@@ -1,0 +1,41 @@
+package com.kh.var;
+
+public class Prac3 {
+	
+	package com.kh.var;
+
+	public class Prac1 {
+		
+		public static void method1() {
+		
+			String name = "노다비";
+			char sex = 'F';
+			int PassportNo = 456789;
+			short  CustomerNumber = 123;
+			long TicketNumber = 922337203 ;
+			byte GateNumber = 33;
+			float BaggageWeight = 8.9f;
+			double detailed = 8.95;
+			boolean AditionalFee = true;	
+
+		
+
+			
+			System.out.println("name : " +  name);
+			System.out.println("sex : " + sex);
+			System.out.println("PassportNo : " + PassportNo);
+			System.out.println("CustomerNumber : " + CustomerNumber);
+			System.out.println("TicketNumber : " + TicketNumber);
+			System.out.println("GateNumber : " + GateNumber);
+			System.out.println(BaggageWeight);
+			System.out.println(detailed);
+			System.out.println(AditionalFee);
+			
+		}
+		
+		
+
+	}
+
+
+}

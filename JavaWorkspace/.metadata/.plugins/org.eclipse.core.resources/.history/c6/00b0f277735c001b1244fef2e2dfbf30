@@ -1,0 +1,12 @@
+package com.kh.run;
+
+public class Main {
+
+	// 실행 전용 메소드
+	public static void main(String[] args) {
+		// 자바 프로그램 실행 단축키 : Ctrl + F11
+		
+
+	}
+
+}

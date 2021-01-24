@@ -1,0 +1,32 @@
+package com.kh.var;
+
+public class Prac1 {
+	
+	public static void method1() {
+	
+		String name = "노다비";
+		byte account = 3;
+		short CustomerNumber = 123;
+		int AccountNumber = 56789;
+		long Budget = 9,223,372,036,854,775,807 ;
+		float InterestLate = 3.5f;
+		double detailed = 3.55;
+		char AccountType = 'S';
+		boolean Visa = true;		
+
+		
+		System.out.println(name);
+		System.out.println(subject);
+		System.out.println(sum);
+		System.out.println(schoolStudent);
+		System.out.println(worldStudent);
+		System.out.println(average);
+		System.out.println(detailedAverage);
+		System.out.println(rank);
+		System.out.println(advancement);
+		
+	}
+	
+	
+
+}

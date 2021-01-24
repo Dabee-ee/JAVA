@@ -1,0 +1,21 @@
+// 한 줄 주석 (설명 문구)
+// 이렇게 주석을 작성하게 되면, 개발자는 볼 수 있으나
+// 실제 컴파일되어 컴퓨터에게 명령을 지시할 땐 무시됨.
+
+
+/*
+ * 여러줄 주석도 가능하다.
+ * 우아아아앙
+ */
+
+package com.kh.first;
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Hello World!!");
+
+	}
+
+}

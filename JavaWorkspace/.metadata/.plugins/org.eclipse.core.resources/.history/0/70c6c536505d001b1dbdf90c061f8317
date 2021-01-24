@@ -1,0 +1,18 @@
+package com.kh.run;
+
+import com.kh.var.Prac1;
+import com.kh.var.Prac2;
+import com.kh.var.Prac3;
+
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+			new Prac1().method1();			
+			new Prac2().method1();			
+			new Prac3().method1();
+
+}
+
+}
