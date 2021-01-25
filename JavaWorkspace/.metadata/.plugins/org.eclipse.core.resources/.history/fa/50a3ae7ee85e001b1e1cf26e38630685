@@ -1,0 +1,21 @@
+package com.kh.op.test;
+
+public class C_산술연산자 {
+	// +, -, *, /, %
+	
+		public void test1() {
+			int num1 = 10;
+			int num2 = 5;
+			
+			System.out.println("두 수의 합 : " + ( num1 + num2 ));
+			System.out.println("두 수의 차 : " + ( num1 - num2 ));
+			System.out.println("두 수의 곱 : " + ( num1 * num2 ));
+			System.out.println("두 수의 몫 : " + ( num1 / num2 ));
+			System.out.println("나눈 나머지 : " + ( num1 % num2 ));
+			
+			// -------------------------- //
+			
+		}
+	}
+
+}

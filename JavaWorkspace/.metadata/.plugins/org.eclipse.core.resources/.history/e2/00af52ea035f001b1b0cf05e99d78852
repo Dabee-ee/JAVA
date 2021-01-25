@@ -1,0 +1,13 @@
+package com.kh.var.run;
+
+import com.kh.var.prac.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		new Training_3().example3();
+
+	}
+
+}

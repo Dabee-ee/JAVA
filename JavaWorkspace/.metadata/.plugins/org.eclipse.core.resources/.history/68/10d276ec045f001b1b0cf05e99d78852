@@ -1,0 +1,86 @@
+package com.kh.var.prac;
+
+import java.util.Scanner;
+
+
+
+public class Training_1 {
+	
+	
+	
+	// 실습 문제_1
+	// 정수 두 개를 입력받아 '두 수의 합, 차, 곱, 나누기한 몫과 나머지' 출력
+	
+	public void example1(){
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num1;
+		int num2;
+		
+		System.out.println("첫 번째 정수를 입력하세요  :  ");
+		num1 = sc.nextInt();
+		
+		System.out.println("두 번째 정수를 입력하세요  :  ");
+		num2 = sc.nextInt();
+		
+		System.out.println("두 수의 합  :  " + (num1 + num2));
+		System.out.println("두 수의 차 : " + ( num1 - num2 ));
+		System.out.println("두 수의 곱 : " + ( num1 * num2 ));
+		System.out.println("두 수의 몫 : " + ( num1 / num2 ));
+		System.out.println("나눈 나머지 : " + ( num1 % num2 ));
+		
+	}
+	
+	
+	// 실습 문제_2
+	// 가로, 세로 값을 실수형으로 입력받아 '사각형의 면적과 둘레'를 출력
+	
+		public void example2(){
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double Width;
+		double Height;
+		
+		System.out.println("가로 길이를 입력하세요  :  ");
+		Width = sc.nextDouble();
+		
+		System.out.println("세로 길이를 입력하세요  :  ");
+		Height = sc.nextDouble();
+		
+		System.out.println("면적 : " + (Width * Height));
+		System.out.println("둘레 : " +( (Width + Height) * 2));
+		
+	}
+
+
+//실행 내용 : 실수형으로 국어, 영어, 수학 세 과목의 점수를 입력받아 
+//총점과 평균을 계산해서 출력함
+//- 총점과 평균은 정수형으로 처리함
+
+public void calculatorScore(){
+	
+	Scanner sc = new Scanner(System.in);
+	
+	double korean;
+	double english;
+	double math;
+	
+	System.out.println("국어 점수를 입력하세요  :  ");
+	korean = sc.nextDouble();
+	
+	System.out.println("영어 점수를 입력하세요  :  ");
+	english = sc.nextDouble();
+	
+	System.out.println("수학 점수를 입력하세요  :  ");
+	math = sc.nextDouble();
+	
+	System.out.println("총점 : " + (int)(korean + english + math));
+	System.out.println("평점 : " + (int)((korean + english + math)/3));
+	
+	
+	
+}
+
+}

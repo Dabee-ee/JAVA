@@ -1,0 +1,42 @@
+package com.kh.var;
+
+public class CastingTest {
+	
+	public void castMethod1() {
+		// 자동 형변환이 일어나는 경우
+		// char ->  int
+		char ch1 = 'A';
+		System.out.println("ch1 : " + ch1);
+		
+		int num1 = '깡';
+		System.out.println("num1 : " + num1);
+		
+		// 유니코드가 지원하는 숫자범위 내에서는
+		// 문자 변환이 가능하다.  (0 ~ 65535개 까지 = 2byte)
+		
+		// char ch2 = -65;
+		// 음수는 불가능하다. (문자로 음수를 바꿀 수는 없다.)
+		
+		// int num2 = 500;
+		// char ch3 = num2;
+		
+		// 만약 자동 형변환이 안되는 상황에서 
+		// 변수 앞에 '(바꿀 자료형)'을 명시하면
+		// 강제로 형변환을 시킬 수 있다.
+		
+		int num2 = 500;
+		char ch3 = (char)num2;
+		
+		System.out.println("ch3 : " + ch3 );
+		
+		// 실수형 데이터 형변환
+		long num3 = 1234567890123L;  // long : 000L / float : 000f
+		
+		float flo1 = num3;
+		
+		System.out.println("num3 : " + num3 );
+		System.out.println("flo1 : " + flo1 );
+		
+	}
+
+}

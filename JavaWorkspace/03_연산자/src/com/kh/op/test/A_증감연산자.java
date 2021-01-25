@@ -1,0 +1,50 @@
+package com.kh.op.test;
+
+public class A_증감연산자 {
+	
+	// ++ : +1 을 의미
+	// -- : -1을 의미
+	
+	public void test1() {
+		// 단일로 쓰일 경우 
+		
+		int num = 100;
+		System.out.println("현재 num : " + num);
+		
+		++num; // 전위 연산자
+		System.out.println("++num : " + num);
+		
+		num++; // 후위 연산자
+		System.out.println("num++ : " + num);
+		
+		// num = num + 1;
+		
+		--num; // 전위 연산자
+		System.out.println("--num : " + num);
+		
+		num--; // 후위 연산자
+		System.out.println("num-- : " + num);
+		
+		
+	}
+	
+	public void test2() {
+		// 다른 연산과 함께 쓰일 경우
+		
+		int num1 = 10;
+		int result1 = ++num1 + 3;
+		
+		System.out.println("result1 : " + result1);
+		System.out.println("num1 : " + num1);
+		
+		System.out.println("---------------------");
+		
+		int num2 = 10;
+		int result2 = num2++ + 3;
+		
+		System.out.println("result2 : " + result2);
+		System.out.println("num2 : " + num2);
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.kh.var.prac;
+
+import java.util.Scanner;
+
+public class Practice {
+	
+	public void example1(){
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int num1;
+		int num2;
+		
+		System.out.println("첫 번째 정수를 입력하세요  :  ");
+		num1 = sc.nextInt();
+		
+		System.out.println("두 번째 정수를 입력하세요  :  ");
+		num2 = sc.nextInt();
+		
+		
+	}
+
+}

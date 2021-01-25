@@ -1,0 +1,18 @@
+	package com.kh.op.test;
+
+	public class B_논리부정연산자 {
+		// ! 논리값( true / false ) : 해당 결과를 반대로 뒤집는 연산자
+		// ex) !(메로나, 바밤바, 하겐다즈, 빵빠레, 비비빅, 쿠앤크)
+		
+		public void test1() {
+			// 간단 결과 확인
+			System.out.println("true의 부정 : " + !true);
+			System.out.println("false의 부정 : " + !false);
+			
+			
+			
+		}
+	}
+
+
+

@@ -1,0 +1,15 @@
+package com.kh.run;
+
+//다른 패키지(폴더)에 있는 클래스를
+//참조하는 방법
+import com.kh.var.TestVariable;
+import com.kh.var.TestVariable2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.kh.op.run;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// 실행전용 메소드
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.kh.var.run;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		new Practice().example1();
+
+	}
+
+}

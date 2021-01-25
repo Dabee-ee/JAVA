@@ -1,0 +1,22 @@
+package com.kh.var;
+
+public class CastingTest {
+	
+	public void castMethod1() {
+		// 자동 형변환이 일어나는 경우
+		// char ->  int
+		char ch1 = 'A';
+		System.out.println("ch1 : " + ch1);
+		
+		int num1 = '깡';
+		System.out.println("num1 : " + num1);
+		
+		// 유니코드가 지원하는 숫자범위 내에서는
+		// 문자 변환이 가능하다.  (0 ~ 65535개 까지 = 2byte)
+		
+		char ch2 = -65;
+		System.out.println("ch2 : " + ch2);
+		
+	}
+
+}
