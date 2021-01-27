@@ -8,7 +8,13 @@ public class Main {
 		// 실행전용 메소드
 		// new A_증감연산자().test2();
 		// new B_논리부정연산자().test1();
-		new C_산술연산자().test1();
+		// new C_산술연산자().test1();
+		// new E_일반논리연산자().test3();
+		
+		// new F_복합대입연산자().test();
+		// new G_삼항연산자().test();
+		
+		new I_MyOperator().test();
 		
 		/*
 		 * 연산자

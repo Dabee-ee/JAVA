@@ -2,8 +2,7 @@ package com.kh.run;
 
 // 다른 패키지(폴더)에 있는 클래스를 
 // 참조하는 방법
-import com.kh.var.TestVariable;
-import com.kh.var.TestVariable2;
+import com.kh.var.*;
 
 public class Main {
 
@@ -15,7 +14,7 @@ public class Main {
 		   // new TestVariable().method1();
 		  //new TestVariable().myMethod();
 
-			new TestVariable2().method1();
+			new Input().TestUnicode();
 	}
 	
 
