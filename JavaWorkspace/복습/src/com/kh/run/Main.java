@@ -1,13 +1,12 @@
 package com.kh.run;
 
-import com.kh.loop.*;
+import com.kh.var.*;
 
 public class Main {
 
 	public static void main(String[] args) {
-
-
-		new D_BreakTest().test1();
+		
+		new For().test1();
 
 	}
 

@@ -1,5 +1,6 @@
 package com.kh.loop;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class A_forLoop {
@@ -89,5 +90,82 @@ public class A_forLoop {
 		
 		
 	}
-
+	
+	public void test3() {
+		// 1에서 100까지 수 중
+		// 3의 배수의 합을 구하고,
+		// 3의 배수가 총 몇 개 있는지 구하여
+		// 합 : ooo / 개수 : ooo 이라고 출력하시오.
+		
+		int sum = 0;
+		int count = 0;
+		
+		// 반복문 조건
+		// 시작값 : 1
+		// 끝값 : 100
+		// 반복 시 증가 수치 : +1
+		for( int i = 1 ; i <= 100 ; i++ ) {
+			
+			if( i % 3 == 0) {
+				// 3의 배수라면
+				sum += i;
+				count++;
+			}
+			
+		}
+		
+		System.out.println("합 : " + sum + "/ 개수 : " + count);
+	}
+	
+	public void test4() {
+		// 구구단
+		// 2단
+		// 2 * 1 = 2
+		// 2 * 2 = 4
+		// 2 * 3 = 6
+		//   . . .
+		// 2 * 9 = 18
+		
+		for(int i = 1 ; i < 10 ; i++) {
+			
+			System.out.println("2 * " + i + " = " + (2 * i));
+	}
+	}
+		
+		public void test5() {
+			
+			for(int j = 2 ; j < 10 ; j ++) {
+			
+				for(int i = 1 ; i < 10 ; i ++) {		
+					
+					System.out.println("multi  " + (j * i));
+				}
+				
+				System.out.println("--------------------- ");
+				}	
+		}
+		
+		public void silsub2() {
+			
+			// 1에서 6까지 주사위 임의의 수(랜덤한 수) 3번을 반복해서
+			// 구한뒤 각각의 값과 합계를 출력하는 코드를 작성 하시오.
+			// ---------------
+			// 주사위 : 3
+			// 주사위 : 4
+			// 주사위 : 1
+			// 합계 : 8
+			// ---------------
+			
+			int sum = 0;
+			for(int i = 1; i <= 3 ; i++) {
+				int rnd = new Random().nextInt(6) + 1;
+				
+				System.out.println("주사위 : " + rnd);
+				sum += rnd;
+			}
+			System.out.println("합계 : " + sum);
+			
+		}
+		
+		
 }

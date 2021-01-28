@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>04_조건문</name>
+	<name>Practice3</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>Practice_3</name>
-			<type>2</type>
-			<location>C:/workspace/JavaWorkspace/Practice_3</location>
-		</link>
-	</linkedResources>
 </projectDescription>

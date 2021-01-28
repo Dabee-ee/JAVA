@@ -2,7 +2,7 @@ package com.kh.logic;
 
 public class BeforeLogic {
 
-//	public static void main(String[] args) {
+	public static void main(String[] args) {
 		// 조건문은 어떠한 조건이 참이냐, 거짓이냐에 따라
 		// 수행하는 코드를 선택할 수 있다.
 		
@@ -43,5 +43,5 @@ public class BeforeLogic {
 		System.out.println("false 결과 10 : " +  ( ch != 'A' ) );  
 		
 	}
-
 }
+
