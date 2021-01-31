@@ -1,12 +1,12 @@
 package com.kh.run;
 
-import com.kh.var.*;
+import com.kh.array.*;
 
 public class Main {
 
 	public static void main(String[] args) {
+		new ArrayTest().test2();
 		
-		new Test().test();
 
 	}
 
