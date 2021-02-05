@@ -168,7 +168,7 @@ public class RPS {
 			System.out.println("아쉽게 비겼습니다!   @_@");
 		} else {
 			// 나머지 경우
-			boolean win = true;
+			boolean win = false;
 			
 			if( player.equals("가위") && computer.equals("바위")) {
 				win = false;

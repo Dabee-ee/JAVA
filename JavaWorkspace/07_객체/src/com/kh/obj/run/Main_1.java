@@ -1,12 +1,29 @@
 package com.kh.obj.run;
 
-import com.kh.obj.model.vo.*;
+import java.util.Scanner;
 
 public class Main_1 {
 	public static void main(String[] args) {
-	
-	FieldTest f = new FieldTest(15);
-	System.out.println(f.num1 + " / " + f.num2);
+		
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("아이디 : ");
+		
+		String ID = sc.nextLine();
+//		String a = sc.nextLine();
+
+		System.out.print("이름 : ");
+		
+		String name = sc.nextLine();
+//		String b = sc.nextLine();
+		System.out.println(name + "님의 아이디는" + ID + "입니다.");
+		
+		
+
+
+//	FieldTest f = new FieldTest(15);
+//	System.out.println(f.num1 + " / " + f.num2);
 
 //
 //		Dog d1 = new Dog();

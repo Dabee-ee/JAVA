@@ -10,8 +10,7 @@ public class Main {
 		// new IFtest().test4();
 		// new SwitchTest().test4();
 		
-		new RPS().playGame3();
-
+		public void playGame3() {
+			
 	}
 
-}
