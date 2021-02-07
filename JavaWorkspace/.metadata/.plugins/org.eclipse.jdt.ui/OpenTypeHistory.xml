@@ -9,5 +9,7 @@
     <typeInfo handle="=09_상속/src&lt;com.kh.member.model.vo{Member.java[Member" modifiers="1" timestamp="1612419169565"/>
     <typeInfo handle="=10_다형성/src&lt;com.kh.product.model.vo{Product.java[Product" modifiers="1025" timestamp="1612424144428"/>
     <typeInfo handle="=10_다형성/src&lt;com.kh.product.model.vo{ProductFrame.java[ProductFrame" modifiers="513" timestamp="1612426920829"/>
-    <typeInfo handle="=Polymorphism_Homework_Dabee/src&lt;com.kh.poly{Plane.java[Plane" modifiers="1025" timestamp="1612507493691"/>
+    <typeInfo handle="=Polymorphism_Homework_Dabee/src&lt;com.kh.poly{Plane.java[Plane" modifiers="1025" timestamp="1612689579814"/>
+    <typeInfo handle="=Polymorphism_Homework_Dabee/src&lt;com.kh.poly.emp{Employee.java[Employee" modifiers="1025" timestamp="1612690821209"/>
+    <typeInfo handle="=Polymorphism_Homework_Dabee/src&lt;com.kh.poly.emp{Bonus.java[Bonus" modifiers="513" timestamp="1612690316306"/>
 </typeInfoHistroy>

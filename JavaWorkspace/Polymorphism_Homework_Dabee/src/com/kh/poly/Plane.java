@@ -2,23 +2,34 @@ package com.kh.poly;
 
 public abstract class Plane {
 	
-	private String planeName;
+	private String name;
 	private int fuelSize;
 	
-	public Plane () {}
+	public Plane() {}
 
-	public Plane(String planeName, int fuelSize) {
-		super();
-		this.planeName = planeName;
+	public Plane(String name, int fuelSize) {
+		this.name = name;
 		this.fuelSize = fuelSize;
 	}
-
-	public String getPlaneName() {
-		return planeName;
+	
+	// 주유
+	
+	public void refuel (int fuel) {
+		 this.fuelSize = fuelSize + fuel;
+		 System.out.println(this.fuelSize);
+	}
+	
+	// 운항
+	public abstract void flight (int distance) ;
+	
+	
+	
+	public String getName() {
+		return name;
 	}
 
-	public void setPlaneName(String planeName) {
-		this.planeName = planeName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getFuelSize() {
@@ -29,19 +40,7 @@ public abstract class Plane {
 		this.fuelSize = fuelSize;
 	}
 	
-	// 리필
 	
-	public void refuel(int fuel) {
-		System.out.println(fuelSize + fuel );  
 
-				}
-	
-	public  abstract void flight(int distance) ;
-	
-	public abstract void planInfo() {
-		
-	}
-	
-	
-	}
 
+}

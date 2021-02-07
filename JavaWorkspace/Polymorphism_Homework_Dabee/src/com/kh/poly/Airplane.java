@@ -1,35 +1,24 @@
 package com.kh.poly;
 
 public class Airplane extends Plane {
+	
+// 부모생성자
+	public Airplane() {}
 
-	public Airplane() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Airplane(String planeName, int fuelSize) {
-		super(planeName, fuelSize);
-		// TODO Auto-generated constructor stub
-	}
-
+	public Airplane(String name, int fuelSize) {
+		super(name, fuelSize);
+}
+	
+	// 기능
 	@Override
-	public void flight(int distance) {
-			System.out.println(super.getFuelSize() - (distance * 3) ); 
-			
+	public int flight (int distance) {
+		this.setFuelSize(this.getFuelSize()- (distance * 3));
+		return this.getFuelSize();
 	}
 	
-
-	@Override
-	public void refuel(int fuel) {
-		super.refuel(super.getFuelSize() - fuel);
+//	public int refuel (int fuel) {
+//		this.setFuelSize(this.getFuelSize() + fuel);
+//		return this.getFuelSize();
+//	}
 	}
-
-	@Override
-	public void planInfo() {
-		System.out.println("Plane name \t Fuel Size");
-		
-	}
-
-
-
-}
+	
