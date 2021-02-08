@@ -21,7 +21,7 @@ public class PlaneTest {
 		System.out.println(distance + "운항"); // " 100 운항"
 		
 		planeInfo();
-		System.out.print(a1.getName() + "\t\t") ; a1.flight(distance);
+		System.out.print(a1.getName() + "\t\t" + a1.flight(distance)) ; 
 		System.out.print(c1.getName() + "\t\t") ; c1.flight(distance);
 		System.out.println(fuel + "주유");
 		

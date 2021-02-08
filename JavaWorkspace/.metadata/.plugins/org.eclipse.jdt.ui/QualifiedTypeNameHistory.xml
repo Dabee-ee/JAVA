@@ -14,4 +14,7 @@
     <fullyQualifiedTypeName name="com.kh.emp.model.vo.Employee"/>
     <fullyQualifiedTypeName name="com.kh.member.model.vo.Member"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.kh.string.Stringtest"/>
 </qualifiedTypeNameHistroy>

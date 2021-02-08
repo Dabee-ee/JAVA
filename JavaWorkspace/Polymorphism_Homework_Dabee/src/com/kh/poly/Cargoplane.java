@@ -12,9 +12,9 @@ public class Cargoplane extends Plane {
 
 	// 기능
 	@Override
-	public int flight(int distance) {
+	public void flight(int distance) {
 		this.setFuelSize(this.getFuelSize()- (distance * 5));
-		return this.getFuelSize();
+//		return this.getFuelSize();
 	}
 	
 //	public int refuel (int fuel) {

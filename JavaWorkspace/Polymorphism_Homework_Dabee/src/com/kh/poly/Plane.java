@@ -16,7 +16,7 @@ public abstract class Plane {
 	
 	public void refuel (int fuel) {
 		 this.fuelSize = fuelSize + fuel;
-		 System.out.println(this.fuelSize);
+//		 System.out.println(this.fuelSize);
 	}
 	
 	// 운항

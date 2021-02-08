@@ -11,9 +11,9 @@ public class Airplane extends Plane {
 	
 	// 기능
 	@Override
-	public int flight (int distance) {
+	public void flight (int distance) {
 		this.setFuelSize(this.getFuelSize()- (distance * 3));
-		return this.getFuelSize();
+//		return this.getFuelSize();
 	}
 	
 //	public int refuel (int fuel) {
