@@ -5,25 +5,26 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class TryCatch {
+public class TryCatchTest {
+	// 직접 try - catch 하기
 	
-public void testA() throws Exception {
+	public void testA() {
 		
 		System.out.println("test A 호출 확인!");
 		
 		testB();
 		
-		System.out.println("test A 실행 종료!");
+		System.out.println("test A 실행 종료!");		
 	}
 	
-	public void testB() throws Exception {
+	public void testB() {
 		
 		System.out.println("test B 호출 확인!");
-
+		
 		try {
-		testC();
+			testC();
 		} catch (Exception e) {
-			System.out.println("화재 발생 및 진화 완료!");
+			System.out.println("화재 발생 및 진압 완료!");
 		}
 		
 		System.out.println("test B 실행 종료!");
@@ -35,7 +36,7 @@ public void testA() throws Exception {
 		
 		throw new Exception("화재 발생");
 	}
-
+	
 	public void ioTest1() {
 		// 자바 프로그램은 시스템에 어떠한 글을 작성하는
 		// 입력 자원(System.in)과 화면에 출력하는 출력자원(System.out)
@@ -64,7 +65,7 @@ public void testA() throws Exception {
 				
 			} while(str != null);
 			
-			br = null;
+			// br = null;
 			
 		} catch (FileNotFoundException e) {
 			// 여러 개의 catch 구문을 통해 서로 다른 각각의
@@ -78,21 +79,64 @@ public void testA() throws Exception {
 			
 			e.printStackTrace();
 			
-		} catch(IOException e) {
-			
-			
+		} catch (IOException e) {
+
 		} finally {
 			// 빌려온 입출력 자원 반납하기
 			try {
 				// 다중 try-catch도 가능하다.
 				br.close();
-				
 			} catch (IOException | NullPointerException e) {
 				// e.printStackTrace();
 				System.out.println("입력자원 반납 중 문제가 발생했습니다.");
 			}
 		}
 	}
-		
-	}
+	
+	public void ioTest2() {
+		// try with resource
+		// try 안에 작성한 입출력 자원을
+		// 모두 사용한 후 자동으로 반납(close)까지
+		// 처리하는 예외 처리 구문
 
+		// FileReader fr = new FileReader("test.txt");
+		// BufferedReader br = new BufferedReader(fr);
+		
+		try ( // 자원 할당용 공간을 선언!
+				BufferedReader br = new BufferedReader(new FileReader("test.txt"));
+				) {
+			
+			String str = "";
+			
+			do {
+				
+				str = br.readLine();
+				
+				if(str != null) {
+					System.out.println("읽은 내용 : " + str);
+				}
+				
+			} while(str != null);
+			
+		} catch (Exception e) {
+			// 이렇게 상속 & 다형성 관계를 활용하여
+			// 문제가 발생하는 예외를 한번에 핸들링할 수 있다(제어)
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

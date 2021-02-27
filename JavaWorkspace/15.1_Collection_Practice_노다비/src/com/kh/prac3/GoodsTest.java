@@ -1,0 +1,36 @@
+package com.kh.prac3;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class GoodsTest {
+
+	public static void main(String[] args) {
+		// BufferedReader 에 대해 선언한다.
+				Goods goods = new Goods();
+				
+				// 스캐너에 등록했던 System.in 도 사실 IO 자원! 
+				try(BufferedReader br
+						= new BufferedReader( new InputStreamReader(System.in)) ){
+					
+					System.out.println("다음 항목의 값을 입력하시오.");
+					System.out.print("상품명 : ");
+					goods.setName(br.readLine());
+					System.out.print("가격 : ");
+					goods.setPrice(Integer.parseInt(br.readLine()));
+					System.out.print("수량 : ");
+					goods.setQuantity(Integer.parseInt(br.readLine()));
+					
+					System.out.println("\n입력된 결과는 다음과 같습니다.");
+					System.out.println(goods);
+					int purchase = goods.getPrice() * goods.getQuantity();
+					System.out.println("총 구매 가격 : " + purchase + " 원");
+					
+				} catch (IOException e) {
+					
+					e.printStackTrace();
+				}
+	}
+
+}

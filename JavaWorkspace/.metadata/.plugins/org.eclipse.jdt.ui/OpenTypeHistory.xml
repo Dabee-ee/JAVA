@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=14_StarBugs/src&lt;com.starbugs.model.dao{CafeDAO.java[CafeDAO" modifiers="513" timestamp="1613341878000"/>
+    <typeInfo handle="=15_컬렉션/C:\/Program Files\/Java\/java-11-openjdk\/lib\/jrt-fs.jar`java.base=/module=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/11\/docs\/api\/=/&lt;java.util(Comparator.class[Comparator" modifiers="1537" timestamp="1605437694000"/>
+</typeInfoHistroy>
